@@ -29,6 +29,10 @@ export default function Tailwind() {
         voluptate, tempore sit accusantium eligendi id? Debitis itaque obcaecati
         eaque mollitia tenetur, asperiores neque. Sapiente, ipsa.
       </p>
+
+      <button className="bg-[#1da1f2] text-white hover:bg-red-200">
+        Share on Twitter
+      </button>
     </div>
   );
 }

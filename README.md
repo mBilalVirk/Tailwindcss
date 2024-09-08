@@ -68,3 +68,9 @@ npm run dev
 ```
 
 Tailwind CSS should now be working in your Vite project! You can start using Tailwind classes in your components.
+
+You can also check it on
+https://tailwindcss.com/docs/installation
+
+For Color:
+https://tailwindcss.com/docs/customizing-colors
