@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-blue-500 p-3">
+      <nav className="bg-blue-500 py-3 sticky top-0 transition-all ease-in-out  w-full z-10">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="text-white font-bold text-xl">
@@ -18,7 +18,7 @@ const Navbar = () => {
           </div>
 
           {/* Menu Links for larger screens */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-6 ">
             <NavLink to="/" className="text-white hover:text-gray-200">
               Home
             </NavLink>
@@ -31,6 +31,11 @@ const Navbar = () => {
             <NavLink to="/contact" className="text-white hover:text-gray-200">
               Contact
             </NavLink>
+          </div>
+          <div>
+            <button className="bg-gradient-to-r hidden md:flex from-purple-500 via-pink-500 to-red-500 text-white py-1 px-6 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-pink-300">
+              Login
+            </button>
           </div>
 
           {/* Hamburger Menu Icon for Mobile */}
@@ -58,12 +63,20 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu (Visible when isOpen is true) */}
-        {isOpen && (
-          <div className="md:hidden mt-2 space-y-2 container mx-auto justify-items-center">
+        <div
+          className={`md:hidden overflow-hidden fixed bg-blue-500   transition-all duration-300 ease-in-out  left-0 top-[70px] w-screen z-20 ${
+            isOpen ? "max-h-40" : "max-h-0"
+          }`}
+          style={{
+            maxHeight: isOpen ? "160px" : "0",
+            transition: "max-height 0.3s ease",
+          }}
+        >
+          <div className="mt-2  space-y-2 container mx-auto justify-items-center">
             <NavLink
               to="/"
               className="block text-white hover:text-gray-200"
-              onClick={toggleMenu} // Close the menu when a link is clicked
+              onClick={toggleMenu}
             >
               Home
             </NavLink>
@@ -89,7 +102,7 @@ const Navbar = () => {
               Contact
             </NavLink>
           </div>
-        )}
+        </div>
       </nav>
     </div>
   );
