@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="bg-blue-500 py-3 sticky top-0 transition-all ease-in-out  w-full z-10">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
-          <div className="text-white font-bold text-xl">
+          <div className="text-white font-bold text-xl ">
             <NavLink to="/">MyLogo</NavLink>
           </div>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
             isOpen ? "max-h-40" : "max-h-0"
           }`}
           style={{
-            maxHeight: isOpen ? "160px" : "0",
+            maxHeight: isOpen ? "200px" : "0",
             transition: "max-height 0.3s ease",
           }}
         >
@@ -101,6 +101,11 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
+          </div>
+          <div className="mt-2 mb-2 space-y-2 container mx-auto justify-items-center">
+            <button className="bg-gradient-to-r md:flex from-purple-500 via-pink-500 to-red-500 text-white py-1 px-6 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-pink-300">
+              Login
+            </button>
           </div>
         </div>
       </nav>
