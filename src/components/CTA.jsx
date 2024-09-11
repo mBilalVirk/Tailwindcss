@@ -2,7 +2,7 @@ import React from "react";
 
 const CTA = () => {
   return (
-    <div className="relative mx-auto max-w-6xl mt-20 p-6">
+    <div className="relative mx-auto max-w-6xl mt-20 p-6 sm:gap-6 sm:flex-col">
       <div
         className="rounded-xl p-1 shadow-lg"
         style={{
@@ -22,8 +22,8 @@ const CTA = () => {
                 users to communicate with it effortlessly.
               </p>
             </div>
-            <div className="flex items-center justify-center gap-6 mt-6 lg:mt-0">
-              <button className="bg-gradient-to-r from-violet-600 to-purple-500 hover:from-purple-500 hover:to-red-500 text-white button-text flex items-center justify-center whitespace-nowrap rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 px-12 py-3 w-56 sm:w-72 text-sm sm:text-base tracking-wide p-5">
+            <div className="flex items-center justify-center gap-6 mt-6 lg:mt-0 ">
+              <button className="bg-gradient-to-r from-violet-600 to-purple-500 hover:from-purple-500 hover:to-red-500 text-white button-text flex items-center justify-center whitespace-nowrap rounded-lg shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 px-12 py-3 w-56 sm:w-72 text-sm sm:text-base tracking-wide p-5 ">
                 Get Started
               </button>
               <button className="flex items-center justify-center whitespace-nowrap rounded-lg border border-zinc-700 bg-zinc-900 text-center text-white shadow-md backdrop-blur-md transition-all hover:bg-zinc-800 transform hover:scale-105 px-12 py-3 w-56 sm:w-72 text-sm sm:text-base tracking-wide p-5">

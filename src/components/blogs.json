@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "title": "Exploring the Beauty of Nature",
+    "date": "April 4, 2023",
+    "image": "http://unsplash.it/g/300/400?random&blur&gravity=center",
+    "content": [
+      "Nature offers a beautiful respite from the busy city life. The fresh air and breathtaking landscapes bring peace and tranquility.",
+      "In this blog, we will explore the most beautiful natural wonders that you can visit around the world.",
+      "Whether you enjoy hiking through forests, walking along beaches, or simply enjoying a picnic in a park, nature has something for everyone."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "The Future of Artificial Intelligence",
+    "date": "May 15, 2023",
+    "image": "https://images.unsplash.com/photo-1532074205216-dcba636a62f6",
+    "content": [
+      "Artificial Intelligence (AI) is transforming industries and redefining the future of work and technology.",
+      "In this blog, we delve into the latest advancements in AI and its potential impact on society.",
+      "From self-driving cars to personalized healthcare, AI is set to revolutionize our daily lives in the coming decades."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Mastering the Art of Cooking",
+    "date": "June 30, 2023",
+    "image": "https://images.unsplash.com/photo-1516684669134-de6b18952fbc",
+    "content": [
+      "Cooking is not just about making food; it is an art form that requires creativity, passion, and skill.",
+      "In this blog, we will share tips and recipes that can help you become a master in the kitchen.",
+      "Whether you are a beginner or an experienced cook, there's always something new to learn in the world of culinary arts."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Top Travel Destinations for 2024",
+    "date": "July 10, 2023",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "content": [
+      "With the world opening up again, many are eager to explore new travel destinations.",
+      "This blog highlights the top travel destinations for 2024, including hidden gems and popular tourist spots.",
+      "From tropical beaches to cultural landmarks, these destinations are perfect for your next adventure."
+    ]
+  }
+]

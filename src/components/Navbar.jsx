@@ -31,6 +31,9 @@ const Navbar = () => {
             <NavLink to="/contact" className="text-white hover:text-gray-200">
               Contact
             </NavLink>
+            <NavLink to="/blogs" className="text-white hover:text-gray-200">
+              Blogs
+            </NavLink>
           </div>
           <div>
             <button className="bg-gradient-to-r hidden md:flex from-purple-500 via-pink-500 to-red-500 text-white py-1 px-6 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-pink-300 font-bold">
