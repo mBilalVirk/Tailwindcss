@@ -34,6 +34,7 @@ const Testimonials = () => {
         <h1 className="lg:text-7xl text-4xl md:text-5xl font-bold tracking-tight text-gray-900 text-center">
           Whats Our
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900">
+            {" "}
             Customer Says
           </span>
         </h1>

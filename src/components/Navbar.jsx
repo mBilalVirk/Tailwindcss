@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to track menu open/close
@@ -36,9 +36,11 @@ const Navbar = () => {
             </NavLink>
           </div>
           <div>
-            <button className="bg-gradient-to-r hidden md:flex from-purple-500 via-pink-500 to-red-500 text-white py-1 px-6 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-pink-300 font-bold">
-              Login
-            </button>
+            <NavLink to="/login">
+              <button className="bg-gradient-to-r hidden md:flex from-purple-500 via-pink-500 to-red-500 text-white py-1 px-6 rounded-full shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-pink-300 font-bold">
+                Login
+              </button>
+            </NavLink>
           </div>
 
           {/* Hamburger Menu Icon for Mobile */}

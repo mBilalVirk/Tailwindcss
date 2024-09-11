@@ -12,7 +12,8 @@ const Features = () => {
             <h1 className="lg:text-7xl text-4xl md:text-5xl font-bold tracking-tight text-gray-900 text-center">
               Your Idea
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900">
-                Soluton is here
+                {" "}
+                Solution is here
               </span>
             </h1>
             <p className="mt-6 text-md text-gray-600 max-w-lg text-center">
