@@ -12,6 +12,8 @@ import Contact from "./components/Contact";
 import Blogs from "./components/Blogs";
 
 import Login from "./components/Login";
+import Signup from "./components/Signup";
+
 import "./index.css"; // Make sure Tailwind is set up correctly
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );
