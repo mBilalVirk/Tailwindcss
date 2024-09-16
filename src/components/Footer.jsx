@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-white dark:bg-blue-600">
+      <footer className="bg-white dark:bg-blue-600 mt-3">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0"></div>
@@ -75,7 +75,7 @@ const Footer = () => {
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2023{" "}
               <a href="https://flowbite.com/" className="hover:underline">
-                Flowbite™
+                Bilal Virk™
               </a>
               . All Rights Reserved.
             </span>

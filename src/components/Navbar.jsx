@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-blue-500 py-3 fixed font-bold -top-1 transition-all ease-in-out  w-full z-10">
+      <nav className="bg-blue-500 py-3 fixed font-bold -top-1 transition-all ease-in-out  w-full z-30">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="text-white font-bold text-xl ">
@@ -86,7 +86,7 @@ const Navbar = () => {
 
         {/* Mobile Menu (Visible when isOpen is true) */}
         <div
-          className={`md:hidden overflow-hidden fixed bg-blue-500   transition-all duration-300 ease-in-out  left-0 top-[70px] w-screen z-20 font-bold ${
+          className={`md:hidden overflow-hidden fixed bg-blue-500 transition-all duration-300 ease-in-out left-0 top-[70px] w-screen z-40 font-bold ${
             isOpen ? "max-h-40" : "max-h-0"
           }`}
           style={{
@@ -94,7 +94,7 @@ const Navbar = () => {
             transition: "max-height 0.3s ease",
           }}
         >
-          <div className="mt-2  space-y-2 container mx-auto justify-items-center">
+          <div className="mt-2 space-y-2 container mx-auto justify-items-center">
             <NavLink
               to="/"
               className="block text-white hover:text-gray-200"
@@ -130,7 +130,16 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
+        {/* Overlay */}
+        {isOpen && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 z-30 h-screen"
+            onClick={toggleMenu} // Close the menu when the overlay is clicked
+          ></div>
+        )}
       </nav>
+
       <Outlet />
     </div>
   );

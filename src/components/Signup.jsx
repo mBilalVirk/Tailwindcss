@@ -42,7 +42,7 @@ const Signup = () => {
   };
 
   return (
-    <section className=" mt-[100px]">
+    <section className=" mt-[50px]">
       <div className="flex flex-col items-center justify-center mx-auto  ">
         <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md sm:max-h-full  dark:bg-blue-500 dark:border-gray-700">
           <div className="p-6 md:space-y-6 sm:p-8">
