@@ -23,9 +23,9 @@ const Home = () => {
               </div>
               <div className="flex flex-col sm:flex-row mt-10">
                 <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                  <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                  <div className="w-40 h-40 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400 mt-4">
                     <div className="profile-pic">
-                      <MdAccountCircle className="w-20 h-24 text-blue-500" />{" "}
+                      <MdAccountCircle className="w-40 h-40 text-blue-500" />{" "}
                       {/* Use the imported icon here */}
                     </div>
                   </div>
