@@ -5,7 +5,9 @@ const Blogs = () => {
   const [selectedBlog, setSelectedBlog] = useState(null);
   const [blogs, setBlogs] = useState([]);
 
-  // Fetch all blogs from the backend on component mount
+  useEffect(() => {
+    document.title = "Blogs"; // Change the page title
+  }, []);
   useEffect(() => {
     axios
       .get("http://localhost:8000/api/blogs")

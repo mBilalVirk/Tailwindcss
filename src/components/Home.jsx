@@ -1,5 +1,5 @@
 // src/components/Hero.jsx
-import React from "react";
+import { React, useEffect } from "react";
 import { MdAccountCircle } from "react-icons/md";
 import Images from "../assets/Images/Write-code.png";
 
@@ -8,6 +8,9 @@ import Features from "../components/Features";
 import CTA from "../components/CTA";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home"; // Change the page title
+  }, []);
   return (
     <>
       <div className=" text-black h-full mt-[100px] container mx-auto">

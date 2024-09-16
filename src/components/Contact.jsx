@@ -1,6 +1,9 @@
-import React from "react";
+import { React, useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact Us"; // Change the page title
+  }, []);
   return (
     <div className="py-16 px-4 mt-[100px] font-bold">
       <div className="max-w-3xl mx-auto ">

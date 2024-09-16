@@ -13,7 +13,7 @@ const Navbar = () => {
       <nav className="bg-blue-500 py-3 fixed font-bold -top-1 transition-all ease-in-out  w-full z-30">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
-          <div className="text-white font-bold text-xl ">
+          <div className="text-white font-bold text-xl font-myFont">
             <NavLink to="/">MyLogo</NavLink>
           </div>
 

@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect } from "react";
 
 const servicesData = [
   {
@@ -46,6 +46,9 @@ const servicesData = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    document.title = "Services"; // Change the page title
+  }, []);
   return (
     <section className="py-12   mt-[100px]">
       <div className="container mx-auto px-4">

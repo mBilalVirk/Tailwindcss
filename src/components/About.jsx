@@ -1,6 +1,9 @@
-import React from "react";
+import { React, useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About"; // Change the page title
+  }, []);
   return (
     <div className="mt-[100px] py-16">
       <div className="container mx-auto px-4">
