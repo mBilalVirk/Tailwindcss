@@ -27,8 +27,13 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row mt-10">
                 <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                   <div className="w-40 h-40 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400 mt-4">
-                    <div className="profile-pic">
-                      <MdAccountCircle className="w-40 h-40 text-blue-500" />{" "}
+                    <div className="profile-pic ">
+                      <img
+                        className="rounded-full"
+                        src="https://dummyimage.com/150x150.gif?text=150*150"
+                        alt=""
+                      />
+                      {/* <MdAccountCircle className="w-40 h-40 text-blue-500" />{" "} */}
                       {/* Use the imported icon here */}
                     </div>
                   </div>
