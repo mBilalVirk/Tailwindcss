@@ -76,6 +76,12 @@ const Contact = () => {
         <p className="text-center text-gray-600  mb-8">
           Have any questions? Feel free to reach out!
         </p>
+        {/* Success Message */}
+        {successMessage && (
+          <div className="mt-2 text-center text-green-500">
+            {successMessage}
+          </div>
+        )}
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
             <div>
@@ -138,13 +144,6 @@ const Contact = () => {
             </button>
           </div>
         </form>
-
-        {/* Success Message */}
-        {successMessage && (
-          <div className="mt-6 text-center text-green-500">
-            {successMessage}
-          </div>
-        )}
       </div>
     </div>
   );
